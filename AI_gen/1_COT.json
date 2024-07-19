@@ -1,0 +1,47 @@
+[
+  {
+    "type": "organization",
+    "id": "identity--1234",
+    "name": "Stark Industries"
+  },
+  {
+    "type": "marking-definition",
+    "id": "marking-definition--5678",
+    "definition_type": "statement",
+    "definition": "Copyright information"
+  },
+  {
+    "type": "marking-definition",
+    "id": "marking-definition--91011",
+    "definition_type": "TLP",
+    "definition": "AMBER"
+  },
+  {
+    "type": "indicator",
+    "id": "indicator--121314",
+    "indicator_types": ["malicious-activity"],
+    "pattern": "ipv4-addr:value = '10.0.0.0'",
+    "valid_from": "2017-04-14T00:00:00Z"
+  },
+  {
+    "type": "relationship",
+    "id": "relationship--151617",
+    "relationship_type": "marking",
+    "source_ref": "indicator--121314",
+    "target_ref": "marking-definition--5678"
+  },
+  {
+    "type": "relationship",
+    "id": "relationship--181920",
+    "relationship_type": "marking",
+    "source_ref": "indicator--121314",
+    "target_ref": "marking-definition--91011"
+  },
+  {
+    "type": "relationship",
+    "id": "relationship--212223",
+    "relationship_type": "attributed-to",
+    "source_ref": "indicator--121314",
+    "target_ref": "identity--1234"
+  }
+]

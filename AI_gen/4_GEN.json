@@ -1,0 +1,31 @@
+[
+    {
+        "type": "identity",
+        "id": "identity--1",
+        "name": "Alpha"
+    },
+    {
+        "type": "identity",
+        "id": "identity--2",
+        "name": "Beta"
+    },
+    {
+        "type": "indicator",
+        "id": "indicator--1",
+        "name": "Malicious URL",
+        "created_by_ref": "identity--1"
+    },
+    {
+        "type": "indicator",
+        "id": "indicator--2",
+        "name": "Malicious URL",
+        "created_by_ref": "identity--2"
+    },
+    {
+        "type": "sighting",
+        "id": "sighting--1",
+        "indicator_ref": "indicator--2",
+        "observed_data_refs": ["indicator--2"],
+        "where_sighted_refs": ["identity--2"]
+    }
+]

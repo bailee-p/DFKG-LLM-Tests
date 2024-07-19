@@ -1,0 +1,48 @@
+[
+  {
+    "type": "organization",
+    "id": "org1",
+    "name": "Pym Technologies"
+  },
+  {
+    "type": "organization",
+    "id": "org2",
+    "name": "Oscorp Industries"
+  },
+  {
+    "type": "malware",
+    "id": "mal1",
+    "name": "Online Job Site Trojan",
+    "file_hashes": [
+      {
+        "MD5": "1717b7fff97d37a1e1a0029d83492de1",
+        "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
+      }
+    ]
+  },
+  {
+    "type": "registry_key",
+    "id": "reg1",
+    "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
+  },
+  {
+    "type": "incident",
+    "id": "inc1",
+    "description": "Malware detection on Oscorp's network",
+    "malware_id": "mal1",
+    "registry_key_id": "reg1"
+  },
+  {
+    "type": "notification",
+    "id": "notif1",
+    "incident_id": "inc1",
+    "data_reference": "Observed data",
+    "confirmation": "Malware presence confirmed"
+  },
+  {
+    "type": "collaboration",
+    "id": "collab1",
+    "organizations": ["org1", "org2"],
+    "information_shared": ["mal1", "reg1"]
+  }
+]

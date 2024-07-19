@@ -1,0 +1,38 @@
+[
+    {
+        "type": "malware",
+        "id": "malware-1",
+        "name": "Poison Ivy Variant d1c6",
+        "file_hashes": {
+            "MD5": "abcdef1234567890",
+            "SHA-1": "1234567890abcdef"
+        }
+    },
+    {
+        "type": "threat-actor",
+        "id": "threat-actor-1",
+        "name": "Adversary Bravo",
+        "activities": [
+            {
+                "name": "phishing attacks",
+                "description": "Deliver remote access malware"
+            },
+            {
+                "name": "spear phishing campaigns",
+                "description": "Trick targets into executing malicious payloads"
+            }
+        ]
+    },
+    {
+        "type": "file",
+        "id": "file-1",
+        "name": "resume.pdf",
+        "malware_id": "malware-1"
+    },
+    {
+        "type": "registry-key",
+        "id": "registry-key-1",
+        "name": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2",
+        "malware_id": "malware-1"
+    }
+]

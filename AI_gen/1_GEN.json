@@ -1,0 +1,28 @@
+[
+    {
+        "type": "marking-definition",
+        "id": "marking-definition--1a3b8c7d-4f3e-4b1f-8f4d-3f4e5d6a7b8c",
+        "created": "2017-04-14T00:00:00Z",
+        "definition_type": "tlp",
+        "definition": {
+            "tlp": "AMBER"
+        }
+    },
+    {
+        "type": "marking-definition",
+        "id": "marking-definition--2b4e5d6a-7b8c-4d3e-5f4e-1a3b8c7d4f3e",
+        "created": "2017-04-14T00:00:00Z",
+        "definition_type": "statement",
+        "definition": {
+            "statement": "Copyright information"
+        }
+    },
+    {
+        "type": "indicator",
+        "id": "indicator--3c5f6a7b-8c4d-3e5f-1a2b-4e5d6a7b8c4d",
+        "created": "2017-04-14T00:00:00Z",
+        "valid_from": "2017-04-14T00:00:00Z",
+        "pattern": "[ipv4-addr:value = '10.0.0.0']",
+        "marking_ref": "marking-definition--1a3b8c7d-4f3e-4b1f-8f4d-3f4e5d6a7b8c"
+    }
+]

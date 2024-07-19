@@ -1,0 +1,37 @@
+[
+  {
+    "type": "group",
+    "id": "group1",
+    "name": "Disco Team"
+  },
+  {
+    "type": "crime-syndicate",
+    "id": "crime1",
+    "name": "Disco Team",
+    "group_id": "group1"
+  },
+  {
+    "type": "language",
+    "id": "lang1",
+    "name": "Spanish",
+    "group_id": "group1"
+  },
+  {
+    "type": "method",
+    "id": "method1",
+    "name": "stealing credit card information",
+    "group_id": "group1"
+  },
+  {
+    "type": "email-alias",
+    "id": "email1",
+    "name": "disco-team@stealthemail.com",
+    "group_id": "group1"
+  },
+  {
+    "type": "alternative-name",
+    "id": "altname1",
+    "name": "Equipo del Discoteca",
+    "group_id": "group1"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "type": "identity",
+    "id": "identity-1",
+    "name": "Alpha"
+  },
+  {
+    "type": "identity",
+    "id": "identity-2",
+    "name": "Beta"
+  },
+  {
+    "type": "threat-actor",
+    "id": "threat-actor-1",
+    "name": "Malicious URL"
+  },
+  {
+    "type": "indicator",
+    "id": "indicator-1",
+    "name": "Malicious URL Indicator",
+    "created_by_ref": "identity-1",
+    "labels": ["malicious-activity"],
+    "pattern": "[url:value = 'malicious-url.com']"
+  },
+  {
+    "type": "relationship",
+    "id": "relationship-1",
+    "relationship_type": "indicates",
+    "source_ref": "indicator-1",
+    "target_ref": "threat-actor-1"
+  },
+  {
+    "type": "relationship",
+    "id": "relationship-2",
+    "relationship_type": "attributed-to",
+    "source_ref": "indicator-1",
+    "target_ref": "identity-1"
+  },
+  {
+    "type": "relationship",
+    "id": "relationship-3",
+    "relationship_type": "sighting-of",
+    "source_ref": "indicator-1",
+    "target_ref": "identity-2"
+  }
+]

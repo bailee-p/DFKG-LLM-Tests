@@ -1,0 +1,47 @@
+[
+    {
+        "type": "malware",
+        "id": "malware-1",
+        "name": "Online Job Site Trojan",
+        "file_hashes": [
+            {
+                "type": "MD5",
+                "hash": "1717b7fff97d37a1e1a0029d83492de1"
+            },
+            {
+                "type": "SHA-1",
+                "hash": "c79a326f8411e9488bdc3779753e1e3489aaedea"
+            }
+        ]
+    },
+    {
+        "type": "registry_key",
+        "id": "registry_key-1",
+        "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
+    },
+    {
+        "type": "organization",
+        "id": "organization-1",
+        "name": "Pym Technologies"
+    },
+    {
+        "type": "organization",
+        "id": "organization-2",
+        "name": "Oscorp Industries"
+    },
+    {
+        "type": "incident",
+        "id": "incident-1",
+        "description": "Oscorp detected the Online Job Site Trojan on their network and issued a sighting notification.",
+        "malware_id": "malware-1",
+        "registry_key_id": "registry_key-1",
+        "organizations_involved": ["organization-1", "organization-2"]
+    },
+    {
+        "type": "threat_intelligence_sharing",
+        "id": "threat_intelligence_sharing-1",
+        "description": "Pym Technologies shared information about the Online Job Site Trojan with Oscorp Industries.",
+        "source_organization": "organization-1",
+        "destination_organization": "organization-2"
+    }
+]

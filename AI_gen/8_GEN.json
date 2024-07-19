@@ -1,0 +1,116 @@
+[
+    {
+        "type": "campaign",
+        "id": "campaign1",
+        "name": "Operation Bran Flakes",
+        "start_date": "January 2016",
+        "end_date": "",
+        "description": "Focuses on inserting false information into the BPP's web pages to influence Branistan's election"
+    },
+    {
+        "type": "campaign",
+        "id": "campaign2",
+        "name": "Operation Raisin Bran",
+        "start_date": "February 2016",
+        "end_date": "",
+        "description": "Distributed denial-of-service (DDoS) attack aimed at overwhelming the BPP’s web servers"
+    },
+    {
+        "type": "threat_actor",
+        "id": "apt_bpp",
+        "name": "APT BPP",
+        "description": "Advanced persistent threat group known for strategic approach and government-level resources"
+    },
+    {
+        "type": "threat_actor",
+        "id": "franistan_intelligence",
+        "name": "Franistan Intelligence",
+        "description": "Supports leaders in the threat operation"
+    },
+    {
+        "type": "attack_pattern",
+        "id": "content_spoofing",
+        "name": "Content Spoofing",
+        "description": "Technique used against the BPP website"
+    },
+    {
+        "type": "attack_pattern",
+        "id": "http_flood",
+        "name": "HTTP Flood",
+        "description": "Attack method used against the BPP website"
+    },
+    {
+        "type": "intrusion_set",
+        "id": "branistan_ppp_targeting",
+        "name": "Branistan People’s Party Targeting",
+        "description": "Sophisticated cyber operation targeting the BPP"
+    },
+    {
+        "type": "malware",
+        "id": "malware1",
+        "name": "Malware1",
+        "description": "Malware used in the operation"
+    },
+    {
+        "type": "malware",
+        "id": "malware2",
+        "name": "Malware2",
+        "description": "Malware used in the operation"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship1",
+        "source_ref": "campaign1",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "part_of"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship2",
+        "source_ref": "campaign2",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "part_of"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship3",
+        "source_ref": "apt_bpp",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "attributed_to"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship4",
+        "source_ref": "franistan_intelligence",
+        "target_ref": "apt_bpp",
+        "relationship_type": "supports"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship5",
+        "source_ref": "content_spoofing",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "uses"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship6",
+        "source_ref": "http_flood",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "uses"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship7",
+        "source_ref": "malware1",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "uses"
+    },
+    {
+        "type": "relationship",
+        "id": "relationship8",
+        "source_ref": "malware2",
+        "target_ref": "branistan_ppp_targeting",
+        "relationship_type": "uses"
+    }
+]
